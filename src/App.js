@@ -3,7 +3,7 @@ import './App.css';
 
 function App() {
   return (
-    <h1>This is a simple React JS application...</h1>
+    <h1>This is a simple React JS application.</h1>
   );
 }
 
