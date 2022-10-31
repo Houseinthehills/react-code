@@ -1,9 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <h1>This is a simple React JS application.</h1>
+    <div className='alert alert-danger'>
+      This is a simple React JS application.
+    </div>
+
   );
 }
 
