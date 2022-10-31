@@ -1,12 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import HomePage from './pages/home';
+import Slider from './components/slider';
 function App() {
   return (
-    <div className='alert alert-danger'>
-      This is a simple React JS application.
-    </div>
+    <>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col">
+            <Slider />
+          </div>
+        </div>
+      </div>
+      <HomePage />
+    </>
 
   );
 }
