@@ -9,16 +9,13 @@ const Slider = () => {
         { name: "image 3", image: slider_03 }]
     return (
         <>
-
             <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div className="carousel-inner">
-                    {data.map((item, key) => {
-                        <div class="carousel-item">
-                            <img src={item.image} className="d-block w-100" alt={key = { key }} />
+                    {data.map((item, key) => (
+                        <div className="carousel-item active" key={key}>
+                            <img src={item.image} className="d-block w-100" alt={item.name} />
                         </div>
-
-                    })}
-
+                    ))}
                 </div>
                 <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
