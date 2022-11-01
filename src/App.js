@@ -3,7 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './pages/home';
 import Nav from './components/nav';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-
+import About from './pages/about';
+import Services from './pages/services';
 function App() {
   return (
     <>
@@ -14,6 +15,8 @@ function App() {
               <Nav />
               <Routes>
                 <Route index path='/' element={<HomePage />} />
+                <Route path='/about' element={<About />} />
+                <Route path='/services' element={<Services />} />
               </Routes>
             </div>
           </div>
